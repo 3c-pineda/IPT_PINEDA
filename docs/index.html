@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio | MK.PND</title>
+</head>
+<body>
+    <nav>
+        <a href="#home">mk.pnd</a>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#my-projects">my projects</a></li>
+            <li><a href="#contact-me">contact me</a></li>
+            <li><a href="#about-me">about me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <div>
+                <h1>Hi. I'm <span id="name">Miko Pineda</span>.</h1>
+                <p>CTF Player & IT Student</p>
+                <a href="#my-projects">my projects</a>
+            </div>
+            <div>
+                <img src="./img/picko.jpg" alt="pic ko">
+            </div>
+        </section>
+        <section id="my-projects">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-item"><a href="#">AniQuiz</a></div>
+                <div class="project-item"><a href="#">LiveChat</a></div>
+                <div class="project-item"><a href="#">Obsidian CTF Template</a></div>
+            </div>
+        </section>
+        <section id="contact-me">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Jane" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="jane@doe.jp" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Security Inquiry" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Describe the issue or request in detail." required></textarea>
+
+                <div class="form-buttons">
+                    <button type="reset" class="clear-btn">Clear</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="about-me-content">
+                <img src="./img/chise.jpeg" alt="Miko Pineda" class="about-me-image">
+                <div class="about-me-text">
+                    <p>
+                        I'm a third-year university IT student passionate about coding and cybersecurity. I enjoy building tools and automating tasks that help me work smarter, which is why Python has become one of my favorite languages.
+                    </p>
+                    <p>
+                        Outside of academics, I'm also a Capture The Flag (CTF) player. I regularly participate in Hack The Box challenges, especially the seasonal boxes, to improve my skills and try to hack my way through them. It's a thrilling way for me to learn and grow in the cybersecurity field.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
